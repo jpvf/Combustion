@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<title>Websitename Adminstration Panel</title>
+<link media="screen" rel="stylesheet" type="text/css" href="css/login.css"  />
+<!-- blue theme is default -->
+<link rel="stylesheet" type="text/css" href="css/red-theme-login.css" />
+<!--[if lte IE 6]><link media="screen" rel="stylesheet" type="text/css" href="css/login-ie.css" /><![endif]-->
+</head>
+
+<body>
+	<!--[if !IE]>start wrapper<![endif]-->
+	<div id="wrapper">
+		<div id="login_wrapper">
+		<h1>Authorize Connection <span class="ico"></span></h1>
+			<form action="#">
+				<fieldset>
+						<label>
+							<strong>Login:</strong>
+							<span class="input_wrapper">
+								<input type="text" name=""/>
+							</span>
+						</label>
+						<label>
+							<strong>Password:</strong>
+							<span class="input_wrapper">
+								<input type="password" name=""/>
+							</span>
+						</label>
+						<p>
+							<a href="#" class="lost_pass"><span>Lost your password?</span></a>
+							<span class="button send_form_btn"><span><span>Sign in</span></span><input type="submit" name=""/></span>
+						</p>
+				</fieldset>
+			</form>
+			<div class="error">
+				<div class="error_inner">
+					<strong>Login failed</strong> - User or password incorrect
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--[if !IE]>end wrapper<![endif]-->
+</body>
+</html>

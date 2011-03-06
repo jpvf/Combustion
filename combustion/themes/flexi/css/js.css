@@ -1,0 +1,8 @@
+#main_menu ul {
+	display:none;	
+}
+
+#main_menu li.open ul {
+	display: block;
+}
+

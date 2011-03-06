@@ -1,0 +1,36 @@
+#wrapper {
+	height: 100%;
+}
+#footer {
+	height: 40px;
+}
+
+#head {
+	height: 1px;
+}
+
+#logo_user_details {
+	height: 72px;
+}
+
+#logo a {
+	behavior: url(css/iepngfix.htc);
+	
+}
+
+body {
+	behavior: url(css/csshover.htc);
+}
+
+#content {
+	height: 300px;
+}
+
+.section_content {
+	height: 1px;
+}
+
+.system_inner {
+	height: 1px;
+}
+

@@ -1,0 +1,16 @@
+#wrapper {
+	height:expression(document.body.clientHeight < 501 ? "500px" : "100%" );
+}
+
+h1 {
+	height: 1px;
+}
+ .ico {
+	behavior: url(css/iepngfix.htc);
+	bottom: -1px;
+	
+}
+
+body {
+	behavior: url(css/csshover.htc);
+}

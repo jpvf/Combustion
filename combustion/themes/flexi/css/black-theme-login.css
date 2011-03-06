@@ -1,0 +1,36 @@
+body {
+background-color:#0c0c0c;
+background-image:url(layout/site/black-theme/login_body_top.gif);
+color: #666;
+}
+#wrapper {
+background-image:url(layout/site/black-theme/login_body_bottom.gif);
+
+}
+
+h1 {
+	color: #727272;
+}
+
+.send_form_btn {
+	background-color:#4c4c4c;
+	background-image:url(layout/site/black-theme/forms/send_form_middle.gif);
+}
+
+.send_form_btn span {
+	background-image:url(layout/site/black-theme/forms/send_form_left.gif);
+}
+
+.send_form_btn span span {
+	background-image:url(layout/site/black-theme/forms/send_form_right.gif);
+}
+
+a:link, a:visited, a:hover, a:active {
+	color:#2a73c5;
+}
+
+#login_wrapper form, .error {
+	border-color: #ccc;
+}
+
+

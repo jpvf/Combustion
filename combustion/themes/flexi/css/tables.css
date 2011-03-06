@@ -1,0 +1,268 @@
+/* start tables */
+
+#page .table_section .section_content {
+	padding: 10px 0;
+}
+
+
+.table_wrapper {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 11px;
+	color: #505151;
+	
+}
+
+.table_wrapper_inner {
+	
+}
+
+.table_wrapper td {
+	border: solid #e6e6e6;
+	border-width: 1px 0 0 ;
+	background-image:url(layout/site/table_border.gif);
+	background-repeat: repeat-y;
+}
+
+.table_wrapper td.first_td {
+	background-image: none;
+}
+
+.table_wrapper th {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.table_wrapper th a:link, .table_wrapper th a:visited, .table_wrapper th a:hover, .table_wrapper th a:active {
+	color: #1f476f;
+	display: block;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding: 0 16px 0 0;
+}
+
+.approved {
+	display: block;
+	display: inline-block;
+	padding: 0 0 0 20px;
+	background:url(layout/site/tables/approved.gif) no-repeat left center;
+	color: #65940a;
+}
+
+.pending {
+	display: block;
+	display: inline-block;
+	padding: 0 0 0 20px;
+	background:url(layout/site/tables/pending.gif) no-repeat left center;
+	color: #b86464;
+}
+
+.asc {
+	background-image:url(layout/site/tables/asc.gif);
+}
+
+.desc {
+	background-image:url(layout/site/tables/desc.gif);
+}
+
+.table_wrapper td , .table_wrapper th {
+	text-align: left;
+	padding: 5px 9px;
+	line-height: 26px;
+}
+
+.table_wrapper th {
+	padding: 0 9px;
+}
+
+.table_wrapper td {
+	background-color: #f7f7f7;
+}
+
+.table_wrapper tr.second td {
+	background-color: #f0f0f0;
+}
+
+.actions {
+	width: 126px;
+	overflow: hidden;
+}
+
+.actions .radio {
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	float: left;
+	
+}
+
+.actions ul {
+	margin: 0;
+	padding: 0;
+	width: 150px;
+}
+
+
+.actions ul li {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0 11px 0 0;
+	list-style: none;
+	
+}
+
+.actions ul a:link, .actions ul a:visited, .actions ul a:hover, .actions ul a:active {
+	display: block;
+	width: 14px;
+	height: 13px;
+	text-indent: -3000px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.action1 {
+	background-image:url(layout/site/tables/action1.gif);
+}
+.action2 {
+	background-image:url(layout/site/tables/action2.gif);
+}
+.action3 {
+	background-image:url(layout/site/tables/action3.gif);
+}
+.action4 {
+	background-image:url(layout/site/tables/action4.gif);
+}
+
+
+.table_section .sct_left .sct_left .sct_right {
+	padding: 0 2px;
+} 
+
+
+.table_section form, .table_section fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.table_menu {
+	width: 100%;
+	overflow: hidden;
+	padding: 5px 0 0;
+	margin: 0 0 -3px;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.table_menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+.table_menu .left {
+	float: left;
+	padding: 0 0 0 11px;
+}
+
+.table_menu .right {
+	float: right;
+	padding: 0 7px 0 0;
+}
+
+.table_menu li {
+	float: left;
+	margin: 0;
+	padding: 0 6px 0 0;
+	list-style: none;
+}
+
+
+/* end tables */
+
+
+/* start tables */
+
+#product_list {
+	margin: -2px 0 0;
+}
+
+
+.table_wrapper td.photo, .table_wrapper th.photo {
+	
+	width: 47px;
+}
+
+
+
+
+.product_thumb {
+	display: block;
+	width: 48px;
+	height: 35px;
+	margin: 0 auto;
+	
+}
+
+.product_thumb img {
+	border: 2px solid #c6c6c6;
+	display: block;
+}
+
+.product_name:link, .product_name:visited, .product_name:hover, .product_name:active  {
+	line-height: normal;
+	font-weight: bold;
+	font-size: 12px;
+	display: block;
+	display: inline-block;
+}
+
+
+
+.actions_menu a:link, .actions_menu a:visited, .actions_menu a:hover, .actions_menu a:active {
+	display: block;
+	padding: 0 0 0 18px;
+	font-weight: bold;
+	font-size: 11px;
+	
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.actions_menu {
+	overflow: hidden;
+	width: 120px;
+}
+
+.actions_menu ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 200px;
+}
+
+
+.actions_menu li {
+	margin: 0;
+	padding: 0 10px 0 0;
+	list-style: none;
+	float: left;
+}
+
+.details {
+	background-image:url(layout/site/tables/action1.gif);
+}
+
+.edit {
+	background-image:url(layout/site/tables/edit_action.gif);
+}
+
+.delete {
+	background-image:url(layout/site/tables/action4.gif);
+}
+
+/* end tables */
+

@@ -1,0 +1,106 @@
+/* start pagination */
+.pagination {
+
+	margin: 8px 0 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+	overflow: hidden;
+	line-height: 18px;
+	color: #444;
+	font-size: 11px;
+}
+
+.pagination  .page_no {
+	float: left;
+	color: #444;
+	font-size: 11px;
+	white-space: nowrap;
+	display: block;
+	padding: 0 0 0 10px;
+}
+
+
+
+.pag_list {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+.pag_list li {
+	float: left;
+	list-style: none;
+	padding: 0 10px 0 0;
+	color: #939292;
+	
+}
+
+.pag_list a:link, .pag_list a:visited,  .pag_list a:active {
+	color: #406f85;
+	display: block;
+	
+}
+
+
+
+
+.pag_list .current_page:link, 
+.pag_list .current_page:visited, 
+.pag_list .current_page:hover, 
+.pag_list .current_page:active {
+	color: #fff;
+	background: #96b7c5 url(layout/site/tables/current_page_middle.gif) repeat-x;
+	display: block;
+	height: 18px;
+	line-height: 17px;
+	float: left;
+	font-weight: bold;
+	
+	
+}
+
+.pag_list .current_page span {
+	display: block;
+	background:url(layout/site/tables/current_page_left.gif) no-repeat;
+	height: 18px;
+	float: left;
+}
+
+.pag_list .current_page span span {
+	background:url(layout/site/tables/current_page_right.gif) no-repeat right center;
+	padding: 0 5px;
+	float: left;
+}
+
+
+.pag_list .pag_nav:link,
+.pag_list .pag_nav:visited,
+.pag_list .pag_nav:hover
+.pag_list .pag_nav:active
+{
+	background:#828282 url(layout/site/tables/pag_nav_middle.gif) repeat-x;
+	color: #fff;
+	margin: 0;
+}
+
+.pag_list .pag_nav span {
+	display: block;
+	background:url(layout/site/tables/pag_nav_left.gif) no-repeat;
+}
+
+.pag_list .pag_nav span span {
+	background:url(layout/site/tables/pag_nav_right.gif) no-repeat right top;
+	padding: 0 7px;
+}
+
+
+
+
+
+
+
+/* end pagination */
+

@@ -1,0 +1,184 @@
+body {
+	background:#0c0c0c;
+}
+
+
+a:link, 
+a:visited,
+a:hover, 
+a:active {
+	color: #125ba0;
+}
+
+#footer {
+	background: #131313;
+}
+
+#wrapper {
+	background-image: url(layout/site/black-theme/wrapper_bottom.gif);
+}
+
+#content {
+	background-image: url(layout/site/black-theme/wrapper_top.gif);
+}
+
+#head {
+	background:#1a1a1a;
+}
+
+#sidebar .section {
+background:#bebebe;
+border-color:#bebebe;
+}
+#sidebar .section_inner {
+border-color:#a5a5a5;
+}
+#sidebar .title_wrapper {
+background:#d8d8d8;
+}
+#sidebar h2 {
+color:#5b5b5b;
+}
+
+.stats {
+color:#484848;
+
+}
+
+.stats_odd {
+border-color:#a5a5a5;
+}
+.stats_even {
+	background-color: #c7c7c7;
+}
+.stats_even dt {
+color:#0b3862;
+}
+
+#main_menu li li {
+background-image: url(layout/site/black-theme/main_menu_li2.gif);
+
+}
+
+#main_menu li span, 
+#main_menu li a:link, 
+#main_menu li a:visited, 
+#main_menu li a:active {
+	color: #0b3862;
+}
+#main_menu li ul a:link, 
+#main_menu li ul a:visited, 
+#main_menu li ul a:active {
+	color: #125ba0;
+	background-image:url(layout/site/black-theme/file.gif);
+	
+}
+
+#main_menu li a:link, 
+#main_menu li a:visited, 
+#main_menu li a:hover, 
+#main_menu li a:active {
+	background-image:url(layout/site/black-theme/file.gif);
+}
+
+#main_menu a.selected {
+	color:#464646 !important;
+	background-image:url(layout/site/black-theme/selected.gif) !important;
+	
+	
+}
+
+
+#page .section {
+	border-color: #e6e6e6;
+}
+
+#page .section_inner {
+	border-color: #c6c6c6;
+}
+
+#page .title_wrapper {
+	background:#d9d9d9;
+}
+
+#page h2 {
+	color: #5a5b5b;
+}
+
+.section_menu a:link, 
+.section_menu a:visited, 
+.section_menu a:hover, 
+.section_menu a:active {
+	color: #858585;
+}
+
+
+#footer_inner {
+	color:#4d4c4c;
+}
+
+.copyright strong  {
+	color: #646464;
+}
+
+.footer_menu a:link, 
+.footer_menu a:visited, 
+.footer_menu a:hover, 
+.footer_menu a:active {
+	color:#6d8092;
+}
+
+.footer_menu li  {
+	background-image:url(layout/site/black-theme/footer_menu.gif);
+}
+
+.pag_list .current_page:link, 
+.pag_list .current_page:visited, 
+.pag_list .current_page:hover, 
+.pag_list .current_page:active {
+	background-color:#d1d1d1;
+	background-image:url(layout/site/black-theme/current_page_middle.gif);
+}
+
+.pag_list .current_page span {
+	background-image: url(layout/site/black-theme/current_page_left.gif);
+}
+
+.pag_list .current_page span span {
+	background-image: url(layout/site/black-theme/current_page_right.gif);
+}
+
+.system_messages li.red_message {
+	border-color: #deb9b9;
+}
+
+.system_messages li.yellow_message {
+	border-color: #dedeb9;
+}
+
+.system_messages li.blue_message {
+	border-color: #c4d7de;
+}
+
+#user_events {
+	background-image: url(layout/site/black-theme/user_events.gif);
+}
+
+#user_loged {
+	background-image: url(layout/site/black-theme/user_loged.gif);
+}
+
+.send_form_btn {
+	background-color:#4c4c4c;
+	background-image:url(layout/site/black-theme/forms/send_form_middle.gif);
+}
+
+.send_form_btn span {
+	background-image:url(layout/site/black-theme/forms/send_form_left.gif);
+}
+
+.send_form_btn span span {
+	background-image:url(layout/site/black-theme/forms/send_form_right.gif);
+}
+
+
