@@ -31,7 +31,9 @@ class proyectos extends MY_Controller
 		
 		$this->pagination->initialize($config); 	
 		
-		$tmpl = array ( 'table_open'  => '<table class="tables table-full">' );
+		$tmpl = array ( 'table_open'  => '<table class="tables table-full ui-widget">',
+						 'heading_cell_start'  => '<th class="ui-state-default">',
+                    	 'heading_cell_end'    => '</th>', );
 
 		$this->table->set_template($tmpl);
 		
