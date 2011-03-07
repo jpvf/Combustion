@@ -7,6 +7,7 @@ class forms
 	{
 		$CI =& get_instance();
 		$this->submit = "\t\t<?php echo form_submit(array('name' => 'submit', 'value' => 'Guardar', 'class' => 'button align-right')); ?>";
+		$this->cancel = ''; 
 	}
 	
 	private function _create($fields = array())
@@ -54,9 +55,11 @@ class forms
 		return $element;
 	}
 	
-	function generate($fields = '', $edit = FALSE)
+	function generate($fields = '', $edit = FALSE, $cancel = '')
 	{
 		$this->edit = $edit;
+		
+		$this->cancel = $cancel;
 		
 		$elements = $this->_create($fields);
 		
@@ -64,7 +67,7 @@ class forms
 
 		$ul .= implode("\n\t</li>\n\t<li>\n\t", $elements);
 		
-		$ul .= "\n\t</li>\n\t<li>\n " . $this->submit;
+		$ul .= "\n\t</li>\n\t<li>\n " . $this->submit . $this->cancel;
 		
 		$ul .= "\n\t</li>\n</ul>\n";		
 		

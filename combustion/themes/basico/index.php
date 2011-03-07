@@ -1,7 +1,7 @@
 <?php echo $doctype; ?>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title><?php echo $titulo ?></title>
 		<link href="<?php echo $theme; ?>/assets/css/reset.css" rel="stylesheet" />
 		<link href="<?php echo $theme; ?>/assets/css/smoothness/jquery-ui.css" rel="stylesheet" />
@@ -37,7 +37,7 @@
 		<span class="clearFix"></span>
 		
 		<div id="footer">
-			<p>Generador de código.</p>
+			<p>Generador de cÃ³digo.</p>
 		</div>
 		
 		<script src="<?php echo $theme; ?>/assets/js/jquery.min.js"></script>

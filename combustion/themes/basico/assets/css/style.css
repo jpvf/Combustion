@@ -53,8 +53,8 @@ table.tables td, table.tables th{border:1px solid #dbdbdb;padding:5px;}
 table a.table-order {display:block;}
 table a.table-order span{display:inline-block;}
 
-table.tables thead th{background: #E5E5E5;font-weight:bolder;}
-table.tables thead tr{background: #E5E5E5;font-weight:bolder;text-align:center}
+table.tables thead th{}
+table.tables thead tr{font-weight:bolder;text-align:center}
 table.tables thead td{}
 
 table.tables tbody tr{}

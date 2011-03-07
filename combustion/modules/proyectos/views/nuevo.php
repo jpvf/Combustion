@@ -18,7 +18,7 @@
  		<?php echo form_input(array('name' => 'version', 'id' => 'version', 'maxlength' => '3' )); ?>
 	</li>
 	<li>
- 		<?php echo form_submit(array('name' => 'submit', 'value' => 'Guardar', 'class' => 'button align-right')); ?>
+ 		<?php echo form_submit(array('name' => 'submit', 'value' => 'Guardar', 'class' => 'button align-right')); ?>		<?php echo anchor('proyectos/index', 'Cancelar', array('class' => 'button align-right')); ?>
 	</li>
 </ul>
 

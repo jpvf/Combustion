@@ -117,7 +117,9 @@ class {$this->table} extends MY_Controller
 		
 		\$this->pagination->initialize(\$config); 	
 		
-		\$tmpl = array ( 'table_open'  => '<table class="tables table-full">' );
+		\$tmpl = array ( 'table_open'  => '<table class="tables table-full ui-widget">',
+						 'heading_cell_start'  => '<th class="ui-state-default">',
+                    	 'heading_cell_end'    => '</th>', );
 
 		\$this->table->set_template(\$tmpl);
 		
@@ -188,7 +190,7 @@ VIEW;
 	private function _add()
 	{
 		$this->load->library('forms');		
-		$lista = $this->ci->forms->generate($this->fields);
+		$lista = $this->ci->forms->generate($this->fields, FALSE, "\t\t<?php echo anchor('{$this->table}/index', 'Cancelar', array('class' => 'button align-right')); ?>");
 		$this->model .= <<<MODEL
 
 	function save(\$data = array(), \$id = 0)
@@ -331,7 +333,7 @@ VIEW;
 	private function _edit()
 	{
 		$this->load->library('forms');		
-		$lista = $this->ci->forms->generate($this->fields, TRUE);
+		$lista = $this->ci->forms->generate($this->fields, TRUE , "\t\t<?php echo anchor('{$this->table}/index', 'Cancelar', array('class' => 'button align-right')); ?>");
 		
 		foreach ($this->fields as $field)
 		{
@@ -425,7 +427,7 @@ VIEW;
 CONTROLLER;
 
 	}
-	function generate($table = '')
+	function generate($table = '', $query = '')
 	{
 		if ($table == '')
 		{
