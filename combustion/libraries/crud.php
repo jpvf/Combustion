@@ -175,7 +175,14 @@ VIEW;
 	private function _crear_directorio($dir = '')
 	{
 		echo "Creando ... $dir <br>"; 
-		mkdir($dir, 0700);
+		if ( ! is_dir($dir))
+		{
+			mkdir($dir, 0700);
+		}
+		else
+		{
+			echo "Ya existe el directorio ... $dir <br>";
+		}
 	}
 	
 	private function _crear_archivo($archivo = '', $contenido = '')
@@ -444,17 +451,19 @@ CONTROLLER;
 		$this->_edit();
 		$this->_delete();
 		
-		$this->_crear_directorio(APPPATH .'output/' . $this->table);
-		$this->_crear_directorio(APPPATH .'output/' . $this->table . '/controllers');
-		$this->_crear_directorio(APPPATH .'output/' . $this->table . '/models');
-		$this->_crear_directorio(APPPATH .'output/' . $this->table . '/views');
+		$output = APPPATH .'output/' . $this->table;
+		
+		$this->_crear_directorio($output);
+		$this->_crear_directorio($output . '/controllers');
+		$this->_crear_directorio($output . '/models');
+		$this->_crear_directorio($output . '/views');
 					
-		$this->_crear_archivo(APPPATH .'output/' . $this->table . '/controllers/' . $this->table . EXT, $this->controller . '}');
-		$this->_crear_archivo(APPPATH .'output/' . $this->table . '/models/' . $this->table . '_model' . EXT, $this->model . '}');
-		$this->_crear_archivo(APPPATH .'output/' . $this->table . '/views/ver' . EXT, $this->view_view);
-		$this->_crear_archivo(APPPATH .'output/' . $this->table . '/views/nuevo' . EXT, $this->add_view);
-		$this->_crear_archivo(APPPATH .'output/' . $this->table . '/views/detalles' . EXT, $this->details_view);
-		$this->_crear_archivo(APPPATH .'output/' . $this->table . '/views/editar' . EXT, $this->edit_view);
+		$this->_crear_archivo($output . '/controllers/' . $this->table . EXT, $this->controller . '}');
+		$this->_crear_archivo($output . '/models/' . $this->table . '_model' . EXT, $this->model . '}');
+		$this->_crear_archivo($output . '/views/ver' . EXT, $this->view_view);
+		$this->_crear_archivo($output . '/views/nuevo' . EXT, $this->add_view);
+		$this->_crear_archivo($output . '/views/detalles' . EXT, $this->details_view);
+		$this->_crear_archivo($output . '/views/editar' . EXT, $this->edit_view);
 		die();
 	}	
 	
